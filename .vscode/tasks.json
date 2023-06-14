@@ -6,11 +6,17 @@
       "command": "C:\\msys64\\mingw64\\bin\\g++.exe",
       "args": [
         "-fdiagnostics-color=always",
+        
         // Debug Configuration:
         "-ggdb",
+
         // Release Configuration:
         // "-O2",
         // "-DNDEBUG",
+
+        // Disables compiler extensions:
+        "-pedantic-errors",
+
         "${file}",
         "-o",
         "${fileDirname}\\${fileBasenameNoExtension}.exe"
