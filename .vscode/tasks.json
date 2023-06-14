@@ -6,7 +6,11 @@
       "command": "C:\\msys64\\mingw64\\bin\\g++.exe",
       "args": [
         "-fdiagnostics-color=always",
-        "-g",
+        // Debug Configuration:
+        "-ggdb",
+        // Release Configuration:
+        // "-O2",
+        // "-DNDEBUG",
         "${file}",
         "-o",
         "${fileDirname}\\${fileBasenameNoExtension}.exe"
