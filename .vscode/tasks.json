@@ -17,6 +17,19 @@
         // Disables compiler extensions:
         "-pedantic-errors",
 
+        // Turns compiler warnings to the maximum:
+        "-Wall",
+        "-Weffc++",
+        "-Wextra",
+        "-Wconversion",
+        "-Wsign-conversion",
+
+        // Treats all warnings as errors:
+        "-Werror",
+
+        // Sets language standard:
+        "-std=c++20",
+
         "${file}",
         "-o",
         "${fileDirname}\\${fileBasenameNoExtension}.exe"
